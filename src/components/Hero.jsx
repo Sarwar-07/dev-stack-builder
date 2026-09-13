@@ -1,4 +1,5 @@
 import React from 'react';
+import bannerImg from '../assets/banner-stack.png';
 
 export default function Hero() {
   return (
@@ -25,11 +26,11 @@ export default function Hero() {
       </div>
 
       <div className="lg:col-span-5 flex justify-center">
-        <div className="w-56 h-56 sm:w-72 sm:h-72 flex items-center justify-center">
-          <img
-            src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80"
-            alt="Development Stack"
-            className="rounded-3xl shadow-xl object-cover ring-4 ring-pink-500/10"
+        <div className="w-64 h-64 sm:w-80 sm:h-80 flex items-center justify-center">
+         <img
+           src={bannerImg}
+           alt="Development Stack"
+           className="w-full h-auto object-contain drop-shadow-xl"
           />
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logoImg from '../assets/logo-text.png';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,13 +24,10 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <a href="#" className="flex items-center gap-2.5">
-            <span className="w-8 h-8 rounded-lg bg-brand-gradient flex items-center justify-center text-white font-extrabold text-xs shadow-sm">
-              DS
-            </span>
-            <span className="font-bold text-lg tracking-tight text-slate-900">Dev Stack</span>
-          </a>
-        </div>
+        <a href="#" className="flex items-center">
+          <img src={logoImg} alt="Dev Stack" className="h-7 w-auto object-contain" />
+        </a>
+      </div>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
           <a href="#home" className="hover:text-slate-900 transition">Home</a>
